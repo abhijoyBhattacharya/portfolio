@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/poggers.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <title>Abhijoy's Site</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="typing-demo">
+            Hey! I'm Abhijoy.
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>
+                I'm an Electronics and Communication Engineering undergrad at Manipal Institute of Technology. I began my coding journey in 2019 by learning C++ in 11th and 12th and by now, I have acquired intermediate proficiency in C and C++. While I'm still new at
+                Web Development, I have a grasp over HTML and CSS and I'm learning JavaScript as well. I have recently started exploring CAD and SolidWorks in particular and I'm slowly getting better at it.
+            </p>
+            <p>Photography is one of my passions and I'd like to think I'm decent at it, you should check out my Instagram!</p>
+            <p>Feel free to reach out to me by e-mail or on my social media!</p>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="skills" ">
+        <h2 class="skill-header ">My Top Skills</h2>
+
+        <div class="skills-wrapper ">
+            <div>
+                <a href="https://en.wikipedia.org/wiki/C_(programming_language) "><img src="images/c.png " alt=" " loading="lazy " class="icon icon-card " /></a>
+                <a href="https://en.wikipedia.org/wiki/C%2B%2B "><img src="images/c++.png " alt=" " loading="lazy " class="icon icon-card "></a>
+                <a href="https://en.wikipedia.org/wiki/HTML "><img src="images/html.png " alt=" " loading="lazy " class="icon icon-card " /></a>
+            </div>
+
+            <div>
+                <a href="https://en.wikipedia.org/wiki/CSS "><img src="images/css.png " alt=" " loading="lazy " class="icon icon-card " /></a>
+                <a href="https://en.wikipedia.org/wiki/SolidWorks "><img src="images/solidworks.png " alt=" " loading="lazy " class="icon icon-card " /></a>
+                <a href="https://www.instagram.com/abhijoybhattacharya/ "><img src="images/photography.png " alt=" " loading="lazy " class="icon icon-card " /></a>
+            </div>
+        </div>
+    </div>
+    <div class="socials ">
+        <a href="mailto:abhijoy.bhattacharya@gmail.com " target="_blank "><img src="images/email.png " alt="email " loading="lazy " class="socicon " /></a>
+        <a href="https://www.instagram.com/abhijoybhattacharya/ " target="_blank "><img src="images/instagram.png " alt="Instagram " loading="lazy " class="socicon " /></a>
+        <a href="https://www.linkedin.com/in/abhijoybhattacharya/ " target="_blank "><img src="images/linkedin.png " alt="Linkedin " loading="lazy " class="socicon " /></a>
+        <a href="https://github.com/abhijoyBhattacharya " target="_blank "><img src="images/github.png " alt="Github " class="socicon " /></a>
+    </div>
+    <footer>
+        <div class="footer-container ">
+            <div class="copyright ">
+                &copy;2022-Abhijoy Bhattacharya
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

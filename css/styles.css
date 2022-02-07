@@ -1,0 +1,177 @@
+/* GLOBAL STYLES */
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #C6D57E;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 30%;
+    margin: 0;
+}
+
+
+/* top button */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #fb4943;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: #091353;
+    color: white;
+}
+
+
+/* typewriter*/
+
+.wrapper {
+    background-color: #FFE1AF;
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-demo {
+    width: 17.5ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2.75px solid;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    font-size: 2.75rem;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+/*about*/
+
+.about {
+    background-color: #A2CDCD;
+    padding: 1rem 6rem;
+    display: inline-block;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about h2 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.about p {
+    padding: 0.4rem;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* skills */
+
+.skills {
+    max-width: 90rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.skill-header {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.skills-wrapper img {
+    padding: 2.3rem;
+}
+
+.icon {
+    width: 6.875rem;
+    height: 6.50rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+
+/*
+.icon-card {
+    background-color: #b2a4d4;
+    border-radius: 0.688rem;
+    box-shadow: 0 0.188rem 0.625rem var(--secondary-shadow);
+    padding: 1rem;
+    margin: 2rem;
+}
+*/
+
+
+/* social icons */
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 40vh;
+}
+
+.socicon {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #fb4943;
+    position: relative;
+    bottom: 0;
+    height: 4.6rem;
+}
+
+footer .copyright {
+    color: black;
+    line-height: 4.6rem;
+    text-align: center;
+    justify-content: center;
+}
